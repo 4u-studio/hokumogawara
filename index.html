@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>北毛瓦 | 沼田市・利根郡の屋根工事専門店</title>
+<meta name="description" content="群馬県沼田市の瓦工事専門店・北毛瓦。屋根修繕・葺き替え・雨漏り修理・新築工事など対応。見積もり無料。Tel: 0278-24-1053">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Noto+Sans+JP:wght@400;500&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #1a1714; --ink-soft: #4a453f; --ink-muted: #8a837a;
+    --roof: #3d3530; --tile: #6b5e54; --warm: #c4995a;
+    --warm-light: #f5ede0; --bg: #faf8f5; --surface: #ffffff;
+    --border: rgba(60,50,40,0.12);
+  }
+  body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--ink); font-size: 14px; line-height: 1.7; }
+  nav { background: var(--roof); padding: 0 24px; height: 52px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+  .nav-logo { font-family: 'Noto Serif JP', serif; font-size: 18px; color: #f5ede0; letter-spacing: 0.1em; }
+  .nav-tel { font-size: 13px; color: var(--warm); font-weight: 500; text-decoration: none; }
+  .hero { background: var(--roof); color: #f5ede0; padding: 56px 24px 48px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: 0; right: 0; width: 200px; height: 100%; background: repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 12px); }
+  .hero-sub { font-size: 11px; letter-spacing: 0.2em; color: var(--warm); margin-bottom: 12px; }
+  .hero-title { font-family: 'Noto Serif JP', serif; font-size: 28px; line-height: 1.4; margin-bottom: 16px; font-weight: 600; }
+  .hero-title span { color: var(--warm); }
+  .hero-desc { font-size: 13px; color: rgba(245,237,224,0.75); line-height: 1.8; margin-bottom: 28px; max-width: 480px; }
+  .hero-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .btn-primary { background: var(--warm); color: #fff; border: none; padding: 12px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-weight: 500; text-decoration: none; display: inline-block; }
+  .btn-outline { background: transparent; color: #f5ede0; border: 1px solid rgba(245,237,224,0.4); padding: 12px 24px; border-radius: 4px; font-size: 14px; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; text-decoration: none; display: inline-block; }
+  .tel-banner { background: var(--warm-light); border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: space-between; }
+  .tel-number { font-size: 22px; font-weight: 500; color: var(--roof); letter-spacing: 0.05em; font-family: 'Noto Serif JP', serif; }
+  .tel-note { font-size: 12px; color: var(--ink-muted); }
+  .badge-row { display: flex; gap: 8px; padding: 12px 24px; background: #fff; overflow-x: auto; border-bottom: 1px solid var(--border); }
+  .badge { white-space: nowrap; font-size: 12px; color: var(--tile); background: var(--warm-light); border: 1px solid rgba(180,140,80,0.2); padding: 5px 12px; border-radius: 20px; font-weight: 500; }
+  .section { padding: 40px 24px; max-width: 800px; margin: 0 auto; }
+  .section-wrap { border-top: 1px solid var(--border); }
+  .section-wrap.bg-light { background: var(--warm-light); }
+  .section-wrap.bg-dark { background: var(--roof); }
+  .section-label { font-size: 11px; letter-spacing: 0.2em; color: var(--warm); margin-bottom: 6px; }
+  .section-title { font-family: 'Noto Serif JP', serif; font-size: 20px; font-weight: 600; margin-bottom: 20px; color: var(--roof); }
+  .reasons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .reason-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+  .reason-num { font-size: 22px; font-weight: 600; color: var(--warm); font-family: 'Noto Serif JP', serif; margin-bottom: 8px; }
+  .reason-title { font-size: 13px; font-weight: 500; color: var(--roof); margin-bottom: 6px; }
+  .reason-body { font-size: 12px; color: var(--ink-muted); line-height: 1.6; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+  .service-item { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px; text-align: center; }
+  .service-icon { font-size: 24px; margin-bottom: 8px; }
+  .service-name { font-size: 13px; font-weight: 500; color: var(--roof); margin-bottom: 4px; }
+  .service-note { font-size: 11px; color: var(--ink-muted); }
+  .area-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .area-tag { background: #fff; border: 1px solid rgba(180,140,80,0.3); color: var(--tile); font-size: 13px; padding: 6px 14px; border-radius: 4px; }
+  .area-tag.main { background: var(--warm); color: #fff; border-color: var(--warm); font-weight: 500; }
+  .review-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+  .stars { color: #f0a500; font-size: 16px; letter-spacing: 2px; margin-bottom: 8px; }
+  .review-text { font-size: 13px; color: var(--ink-soft); line-height: 1.8; font-style: italic; margin-bottom: 10px; }
+  .review-from { font-size: 12px; color: var(--ink-muted); }
+  .contact-section .section-label { color: var(--warm); }
+  .contact-section .section-title { color: #f5ede0; }
+  .contact-big-tel { font-size: 28px; font-weight: 500; color: var(--warm); font-family: 'Noto Serif JP', serif; letter-spacing: 0.05em; margin-bottom: 6px; }
+  .contact-tel-note { font-size: 12px; color: rgba(245,237,224,0.6); margin-bottom: 20px; }
+  .contact-items { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+  .contact-item { display: flex; align-items: flex-start; gap: 12px; font-size: 13px; color: rgba(245,237,224,0.8); }
+  .contact-item-icon { width: 32px; height: 32px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; margin-top: 2px; }
+  .cta-big { background: var(--warm); color: #fff; border: none; padding: 16px; border-radius: 6px; font-size: 15px; cursor: pointer; font-family: 'Noto Sans JP', sans-serif; font-weight: 500; width: 100%; text-align: center; display: block; text-decoration: none; }
+  .map-link { display: inline-block; margin-top: 6px; font-size: 12px; color: rgba(245,237,224,0.5); text-decoration: underline; }
+  footer { background: #111; color: rgba(255,255,255,0.4); text-align: center; padding: 20px 24px; font-size: 11px; line-height: 2; }
+  @media (min-width: 600px) {
+    .hero { padding: 72px 40px 60px; }
+    .hero-title { font-size: 36px; }
+    .section { padding: 56px 40px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">北毛瓦</div>
+  <a href="tel:0278241053" class="nav-tel">📞 0278-24-1053</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-sub">群馬県沼田市・利根郡 屋根工事</div>
+  <h1 class="hero-title">地域に根ざした<br><span>瓦職人</span>の技術で、<br>大切な屋根を守る。</h1>
+  <p class="hero-desc">北毛瓦は、沼田市を中心に屋根の修繕・葺き替え・新設工事を手がける地域密着の瓦工事専門店です。お客様の大切な家を、誠実な仕事でお守りします。</p>
+  <div class="hero-btns">
+    <a href="tel:0278241053" class="btn-primary">無料現地調査を依頼する</a>
+    <a href="#services" class="btn-outline">施工事例を見る</a>
+  </div>
+</div>
+
+<div class="tel-banner">
+  <div>
+    <div style="font-size:12px; color:var(--ink-muted); margin-bottom:2px;">お電話でのお問い合わせ</div>
+    <div class="tel-number">0278-24-1053</div>
+  </div>
+  <div class="tel-note">受付時間 8:00〜18:00<br>年中無休・見積もり無料</div>
+</div>
+
+<div class="badge-row">
+  <span class="badge">✓ 地域密着の安心</span>
+  <span class="badge">✓ 見積もり無料</span>
+  <span class="badge">✓ 保険対応可</span>
+  <span class="badge">✓ 即日対応</span>
+  <span class="badge">✓ 丁寧な施工</span>
+</div>
+
+<div class="section-wrap">
+  <div class="section">
+    <div class="section-label">WHY CHOOSE US</div>
+    <div class="section-title">北毛瓦が選ばれる理由</div>
+    <div class="reasons-grid">
+      <div class="reason-card">
+        <div class="reason-num">01</div>
+        <div class="reason-title">地域密着の安心感</div>
+        <div class="reason-body">沼田市・利根郡を中心に長年施工実績。地域のことを知り尽くした職人が対応します。</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">02</div>
+        <div class="reason-title">迅速な現地対応</div>
+        <div class="reason-body">雨漏りや急なトラブルにも素早く対応。お電話一本でまずは現地を確認しに伺います。</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">03</div>
+        <div class="reason-title">明瞭な見積もり</div>
+        <div class="reason-body">工事前に詳細な見積書を提出。追加費用は発生しません。納得してからご依頼ください。</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-num">04</div>
+        <div class="reason-title">保険申請サポート</div>
+        <div class="reason-body">火災・自然災害による屋根被害は保険適用のケースも。申請手続きをサポートします。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrap" id="services">
+  <div class="section">
+    <div class="section-label">SERVICES</div>
+    <div class="section-title">対応工事一覧</div>
+    <div class="services-grid">
+      <div class="service-item"><div class="service-icon">🏠</div><div class="service-name">瓦の修繕・補修</div><div class="service-note">ひび割れ・ズレ・剥がれ</div></div>
+      <div class="service-item"><div class="service-icon">🔧</div><div class="service-name">屋根葺き替え</div><div class="service-note">全面リフォーム対応</div></div>
+      <div class="service-item"><div class="service-icon">💧</div><div class="service-name">雨漏り修理</div><div class="service-note">急な雨漏りも即対応</div></div>
+      <div class="service-item"><div class="service-icon">🏗</div><div class="service-name">新築・増改築</div><div class="service-note">新設工事一式</div></div>
+      <div class="service-item"><div class="service-icon">🔍</div><div class="service-name">屋根点検</div><div class="service-note">無料で現地確認</div></div>
+      <div class="service-item"><div class="service-icon">📋</div><div class="service-name">保険対応工事</div><div class="service-note">申請サポートあり</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrap">
+  <div class="section">
+    <div class="section-label">REVIEW</div>
+    <div class="section-title">お客様の声</div>
+    <div class="review-box">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">「急な雨漏りで困っていたところ、すぐに来ていただき丁寧に対応してもらいました。仕上がりも非常によく、説明も分かりやすくて安心してお任せできました。」</p>
+      <div class="review-from">— Googleマップ レビューより（★5.0 / 1件）</div>
+    </div>
+  </div>
+</div>
+
+<div class="section-wrap bg-light">
+  <div class="section">
+    <div class="section-label">SERVICE AREA</div>
+    <div class="section-title">対応エリア</div>
+    <div class="area-tags">
+      <span class="area-tag main">沼田市</span>
+      <span class="area-tag">みなかみ町</span>
+      <span class="area-tag">川場村</span>
+      <span class="area-tag">昭和村</span>
+      <span class="area-tag">片品村</span>
+      <span class="area-tag">利根郡全域</span>
+    </div>
+    <p style="margin-top: 14px; font-size: 12px; color: var(--tile);">※上記エリア外でもご相談ください</p>
+  </div>
+</div>
+
+<div class="section-wrap bg-dark">
+  <div class="section contact-section">
+    <div class="section-label">CONTACT</div>
+    <div class="section-title">まずはお気軽にご相談ください</div>
+    <div class="contact-big-tel">0278-24-1053</div>
+    <div class="contact-tel-note">受付時間 8:00〜18:00　年中無休</div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div>
+          <div>群馬県沼田市戸鹿野町558-11</div>
+          <a href="https://maps.google.com/?q=群馬県沼田市戸鹿野町558-11" class="map-link" target="_blank">Googleマップで見る →</a>
+        </div>
+      </div>
+      <div class="contact-item"><div class="contact-item-icon">✅</div><span>見積もり・現地調査は無料です</span></div>
+      <div class="contact-item"><div class="contact-item-icon">🛡</div><span>火災保険・自然災害保険の対応可</span></div>
+    </div>
+    <a href="tel:0278241053" class="cta-big">📞 今すぐ電話する</a>
+  </div>
+</div>
+
+<footer>
+  北毛瓦<br>
+  〒378-0000　群馬県沼田市戸鹿野町558-11<br>
+  Tel: 0278-24-1053<br>
+  © 2025 北毛瓦
+</footer>
+
+</body>
+</html>
